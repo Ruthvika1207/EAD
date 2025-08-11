@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even numbers</title>
+</head>
+<body>
+    <h2>Even numbers from 1-50</h2>
+    <p id="id1"></p>
+    <script>
+        let n=50;
+        let res=" ";
+        for(let i=1;i<=n;i++){
+            if(i%2==0){
+                res+=i+"<br>";
+            }
+        }
+        document.getElementById("id1").innerHTML=res;
+    </script>
+</body>
+</html>

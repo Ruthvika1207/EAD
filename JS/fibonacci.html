@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci</title>
+</head>
+<body>
+    <h3>Fibonacci</h3>
+    <p id="id1"></p>
+    <script>
+         let n = 10;
+        let a = 0, b = 1;
+        let res = "";
+
+        for (let i = 1; i <= n; i++) {
+            res += a + " ";
+            let next = a + b;
+            a = b;
+            b = next;
+        }
+
+        document.getElementById("id1").innerHTML = "First " + n + " Fibonacci numbers: " + res;
+    </script>
+    </script>
+</body>
+</html>

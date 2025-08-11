@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of digits</title>
+</head>
+<body>
+    <h2>Number of digits</h2>
+    <p id="id1"></p>
+    <script>
+        let num = 987654; 
+        let c = 0;
+        let temp = num;
+        if (temp === 0) {
+            c = 1;
+        } else {
+            while (temp > 0) {
+                temp = Math.floor(temp / 10);
+                c++;
+            }
+        }
+
+        document.getElementById("id1").innerHTML = `Number of digits in ${num} = ${c}`;
+    </script>
+</body>
+</html>
